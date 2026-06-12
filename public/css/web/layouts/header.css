@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Fixed Header */
+
+.main-header{
+    position:fixed;
+    top:40px;
+    left:0;
+    width:100%;
+    z-index:999;
+}
+
+/* Top Bar */
+
+.top-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    background:#0f172a;
+    color:white;
+    padding:8px 0;
+    font-size:14px;
+}
+
+.top-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.contact-info{
+    display:flex;
+    gap:20px;
+}
+
+.contact-info span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.top-links{
+    display:flex;
+    gap:20px;
+}
+
+.top-links a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Navbar */
+
+.navbar{
+    background:linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb,
+        #0ea5e9
+    );
+
+    padding:15px 0;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.logo-box{
+    width:60px;
+    height:60px;
+    border-radius:15px;
+
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:28px;
+    color:#2563eb;
+
+    margin-right:12px;
+}
+
+.college-info h4{
+    color:white;
+    margin:0;
+    font-size:22px;
+    font-weight:700;
+}
+
+.college-info p{
+    color:#e2e8f0;
+    margin:0;
+    font-size:12px;
+}
+
+.nav-link{
+    color:white !important;
+    font-weight:500;
+    margin:0 10px;
+    position:relative;
+}
+
+.nav-link::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0%;
+    height:2px;
+    background:#facc15;
+    transition:.3s;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+.admission-btn{
+    background:#facc15;
+    color:black;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:30px;
+    margin-left:20px;
+    font-weight:600;
+}
+
+.admission-btn:hover{
+    transform:translateY(-2px);
+}
+
+/* Page Content Fix */
+
+body{
+    padding-top:120px;
+}
