@@ -66,7 +66,7 @@
 
             <div class="signup-link">
                 Don't have an account?
-                <a href="/signup">Create Account</a>
+                <a href="{{route('signup')}}">Create Account</a>
             </div>
 
         </div>

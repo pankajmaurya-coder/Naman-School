@@ -17,7 +17,7 @@
 
             <div class="top-links">
                 <a href="#">Student Portal</a>
-                <a href="#">Faculty Login</a>
+                <a href="{{route('login')}}">Faculty Login</a>
             </div>
 
         </div>
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="college-info">
-                    <h4>ABC College</h4>
+                    <h4>Naman College</h4>
                     <p>Knowledge • Innovation • Success</p>
                 </div>
 

@@ -33,12 +33,22 @@ class SliderController extends Controller
 }
 
 
-public function list()
-{
-    $sliders = Slider::where('status', 'active')
-                    ->orderBy('sort_order')
-                    ->get();
-
+public function list(){
+    $sliders = Slider::where('status', 'active')->orderBy('sort_order')->get();
     return view('web.index', compact('sliders'));
 }
+
+public function index(){
+  $sliders = Slider::latest()->get();
+  return view('admin.slider.list', compact('sliders'));
+}
+
+public function show(int $id){
+  $slider = Slider::findOrFail($id);
+  return redirect()->route('show');
+}
+
+
+
+
 }
