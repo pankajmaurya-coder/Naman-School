@@ -1,0 +1,79 @@
+.school-footer{
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: #e2e8f0;
+        margin-top: 40px;
+        border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    .school-footer .footer-brand{
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 12px;
+    }
+
+    .school-footer p{
+        color: #cbd5e1;
+        line-height: 1.7;
+        margin-bottom: 0;
+    }
+
+    .school-footer h5{
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+
+    .school-footer a{
+        color: #cbd5e1;
+        text-decoration: none;
+        transition: .3s;
+    }
+
+    .school-footer a:hover{
+        color: #fff;
+        padding-left: 4px;
+    }
+
+    .footer-links li{
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom{
+        border-top: 1px solid rgba(255,255,255,.08);
+        margin-top: 30px;
+        padding-top: 18px;
+        font-size: .95rem;
+        color: #94a3b8;
+    }
+
+    .footer-social a{
+        width: 38px;
+        height: 38px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255,255,255,.08);
+        margin-right: 10px;
+        transition: .3s;
+    }
+
+    .footer-social a:hover{
+        background: #2563eb;
+        transform: translateY(-2px);
+    }
+
+    .footer-newsletter .form-control{
+        background: rgba(255,255,255,.06);
+        border: 1px solid rgba(255,255,255,.12);
+        color: #fff;
+    }
+
+    .footer-newsletter .form-control::placeholder{
+        color: #94a3b8;
+    }
+
+    .footer-newsletter .btn{
+        white-space: nowrap;
+    }

@@ -11,7 +11,8 @@
 
      <link rel="stylesheet" href="{{ asset('css/web/layouts/header.css') }}">
      <link rel="stylesheet" href="{{ asset('css/web/layouts/footer.css') }}">
-      <link rel="stylesheet" href="{{ asset('css/web/components/slider.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/components/slider.css') }}">
+     
 </head>
 <body>
     @include('web.layouts.header')

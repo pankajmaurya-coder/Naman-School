@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f4f6f9;
+}
+
+.slider-form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px
+}
+
+.slider-form-card{
+    width: 600px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.slider-form-card h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 28px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    border-color: #0d6efd;
+}
+
+.form-group input[type="file"]{
+    padding: 8px;
+    cursor: pointer;
+}
+
+.form-group img{
+    width: 150px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.submit-btn{
+    width: 100%;
+    padding: 14px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover{
+    background: #0b5ed7;
+}
+
+.alert{
+    width: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.success{
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.error{
+    background: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+.error ul{
+    padding-left: 20px;
+}
+
+.error li{
+    margin: 5px 0;
+}
+
+@media(max-width:600px){
+
+    .slider-form-card{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .alert{
+        width: 95%;
+    }
+
+    .form-group img{
+        width: 100%;
+        height: auto;
+    }
+}

@@ -7,13 +7,14 @@
     <ul class="sidebar-menu">
 
         <li>
-            <a href="#">
+            <a href="{{ route('dashboard') }}">
                 📊 Dashboard
             </a>
         </li>
+
         <li>
-            <a href="#">
-                📊 Sliders
+            <a href="{{ route('slider.list') }}">
+                🖼 Sliders
             </a>
         </li>
 
@@ -32,12 +33,6 @@
         <li>
             <a href="#">
                 📚 Courses
-            </a>
-        </li>
-
-        <li>
-            <a href="#">
-                🖼 Gallery
             </a>
         </li>
 

@@ -10,7 +10,7 @@
 @section('content')
 
  <h1>All Sliders</h1>
-     <button><a href="{{route('slider')}}">Add Slider</a></button>
+     <button class="add-slider"><a href="{{route('slider')}}">Add Slider</a></button>
     <table>
        <tr>
         <th>image</th>
@@ -27,8 +27,16 @@
             </td>
         <td>{{$slider->title}}</td>
         <td>{{$slider->sort_order}}</td>
-        <td>Edit</td>
-        <td>Delete</td>
+        <td><a href="{{route('slider.edit',$slider->id)}}">Edit</a></td>
+        <td>
+        <form action="{{route('slider.delete', $slider->id) }}" method="POST">
+            @csrf
+           @method('DELETE')
+
+           <button type="submit"  onclick="return confirm('Are you sure you want to delete this slider?')">
+            Delete</button>
+         </form>
+        </td>
        </tr>
        @endforeach
     </table>
