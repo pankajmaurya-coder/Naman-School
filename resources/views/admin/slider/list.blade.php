@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ asset('css/admin/sliders/list.css') }}">
-</head>
-<body>
-     <h1>All Sliders</h1>
+
+@extends('admin.layouts.app')
+
+@section('title','Slider List')
+
+@push('styles')
+ <link rel="stylesheet" href="{{ asset('css/admin/sliders/list.css') }}">
+@endpush
+
+@section('content')
+
+ <h1>All Sliders</h1>
      <button><a href="{{route('slider')}}">Add Slider</a></button>
     <table>
        <tr>
@@ -30,5 +32,6 @@
        </tr>
        @endforeach
     </table>
-</body>
-</html>
+
+
+@endsection

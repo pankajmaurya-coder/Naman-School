@@ -1,63 +1,64 @@
-<div class="sidebar">
+<aside class="sidebar">
 
-    <div class="logo">
-        <h2>ADMIN</h2>
-        <p>Welcome Sir 👋</p>
+    <div class="sidebar-logo">
+        <h2>School Admin</h2>
     </div>
 
-    <ul>
+    <ul class="sidebar-menu">
 
-        <li class="active">
-            <i class="bi bi-speedometer2"></i>
-            Dashboard
+        <li>
+            <a href="#">
+                📊 Dashboard
+            </a>
         </li>
-
-        <li class="title">
-            Website Management
-        </li>
-
-        <li class="sub-menu">
-    <a href="{{ route('slider.list') }}">
-        <i class="bi bi-images"></i>
-        Slider
-    </a>
-</li>
-
-        <li class="sub-menu">
-            <i class="bi bi-file-earmark"></i>
-            About Us
-        </li>
-
-        <li class="sub-menu">
-            <i class="bi bi-image"></i>
-            Gallery
+        <li>
+            <a href="#">
+                📊 Sliders
+            </a>
         </li>
 
         <li>
-            <i class="bi bi-people"></i>
-            Staff Management
+            <a href="#">
+                👨‍🎓 Students
+            </a>
         </li>
 
         <li>
-            <i class="bi bi-person"></i>
-            User Management
+            <a href="#">
+                👨‍🏫 Teachers
+            </a>
         </li>
 
         <li>
-            <i class="bi bi-chat-left-text"></i>
-            Messages
+            <a href="#">
+                📚 Courses
+            </a>
         </li>
 
         <li>
-            <i class="bi bi-gear"></i>
-            Settings
+            <a href="#">
+                🖼 Gallery
+            </a>
         </li>
 
         <li>
-            <i class="bi bi-box-arrow-right"></i>
-            Logout
+            <a href="#">
+                📰 News
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                ⚙ Settings
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                🚪 Logout
+            </a>
         </li>
 
     </ul>
 
-</div>
+</aside>
