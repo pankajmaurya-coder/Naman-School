@@ -10,22 +10,42 @@ use Illuminate\Support\Facades\Log;
 
 class UserController extends Controller
 {
-     public function signup(Request $request)
-    {
-        $validated = $request->validate([
-            'name'     => 'required|string|max:255',
-            'email'    => 'required|email|unique:users,email',
-            'password' => 'required|min:4'
-        ]);
+   public function signup(Request $request)
+{
+    $validated = $request->validate([
+        'name'      => 'required|string|max:255',
+        'email'     => 'required|email|unique:users,email',
+        'password'  => 'required|min:4',
+        'role_id'   => 'required|exists:roles,id',
+        'status'    => 'required',
+        'photo'     => 'nullable',
+        'bio'       => 'nullable'
+    ]);
 
-        User::create([
-            'name'     => $validated['name'],
-            'email'    => $validated['email'],
-            'password' => $validated['password'],
-        ]);
+    $imagePath = null;
 
-        return redirect()->back()->with('success', 'User registered successfully.');
+    if ($request->hasFile('photo')) {
+
+        $imagePath = $request
+                        ->file('photo')
+                        ->store('web/user', 'public');
     }
+
+    User::create([
+        'name'      => $validated['name'],
+        'email'     => $validated['email'],
+        'password'  => $validated['password'],
+        'role_id'   => $validated['role_id'],
+        'status'    => $validated['status'],
+        'photo'     => $imagePath,
+        'bio'       => $validated['bio']
+    ]);
+
+    return redirect()
+        ->back()
+        ->with('success', 'User Created Successfully');
+}
+
 
     public function login(Request $request)
     {
@@ -38,7 +58,7 @@ class UserController extends Controller
 
             $request->session()->regenerate();
 
-            return redirect('/dashboard')
+            return redirect()->route('slider.dashboard')
                 ->with('success', 'Login successful');
         }
 

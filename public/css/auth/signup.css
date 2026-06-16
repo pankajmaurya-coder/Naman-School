@@ -2,86 +2,113 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
+    background:#f3f6fb;
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#4f46e5,#06b6d4);
-    padding:20px;
+    padding:40px;
 }
 
-.signup-container{
+.container{
     width:100%;
-    max-width:500px;
+    max-width:900px;
 }
 
-.signup-card{
+.form-card{
     background:#fff;
-    padding:35px;
-    border-radius:15px;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
 }
 
-.signup-card h2{
+.header{
     text-align:center;
+    margin-bottom:35px;
+}
+
+.header h1{
+    font-size:32px;
+    color:#1e293b;
     margin-bottom:10px;
-    color:#222;
 }
 
-.subtitle{
-    text-align:center;
-    color:#666;
-    margin-bottom:25px;
+.header p{
+    color:#64748b;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
 }
 
 .form-group{
-    margin-bottom:18px;
+    display:flex;
+    flex-direction:column;
 }
 
 .form-group label{
-    display:block;
     margin-bottom:8px;
     font-weight:600;
-    color:#333;
+    color:#334155;
 }
 
 .form-group input,
+.form-group select,
 .form-group textarea{
     width:100%;
-    padding:12px;
-    border:1px solid #dcdcdc;
-    border-radius:8px;
+    padding:14px;
+    border:1px solid #dbe2ea;
+    border-radius:10px;
     outline:none;
+    font-size:15px;
     transition:.3s;
 }
 
 .form-group input:focus,
+.form-group select:focus,
 .form-group textarea:focus{
-    border-color:#4f46e5;
-    box-shadow:0 0 0 3px rgba(79,70,229,.15);
+    border-color:#2563eb;
+    box-shadow:0 0 10px rgba(37,99,235,.15);
 }
 
 textarea{
     resize:none;
+    margin-top:20px;
 }
 
-button{
+.btn{
     width:100%;
     border:none;
-    padding:14px;
-    border-radius:8px;
-    background:#4f46e5;
+    margin-top:25px;
+    padding:15px;
+    background:#2563eb;
     color:white;
     font-size:16px;
     font-weight:600;
+    border-radius:10px;
     cursor:pointer;
     transition:.3s;
 }
 
-button:hover{
-    background:#4338ca;
+.btn:hover{
+    transform:translateY(-2px);
+    background:#1d4ed8;
+}
+
+@media(max-width:768px){
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-card{
+        padding:25px;
+    }
+
 }

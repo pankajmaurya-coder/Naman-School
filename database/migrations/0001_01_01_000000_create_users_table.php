@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('photo')->nullable();
-            $table->enum('role',['admin','user'])->default('user');
+            $table->foreignId('role_id')->constrained('roles')->cascadeOnDelete();
             $table->enum('status',['active', 'inactive'])->default('active');
             $table->text('bio')->nullable();
             $table->rememberToken();
