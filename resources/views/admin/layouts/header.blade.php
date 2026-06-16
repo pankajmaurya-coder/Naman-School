@@ -1,32 +1,14 @@
 <header class="admin-header">
-
     <div class="header-left">
-        <button class="menu-btn">☰</button>
-        <h2>Admin Dashboard</h2>
+        <button class="menu-btn" type="button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <h2>School Admin</h2>
     </div>
 
     <div class="header-right">
-
-        <div class="search-box">
-            <input type="text" placeholder="Search here...">
-            <span>🔍</span>
+        <div class="header-icon">
+            <i class="fa-regular fa-bell"></i>
         </div>
-
-        <div class="icon-box">
-            🔔
-            <span class="badge">5</span>
-        </div>
-
-        <div class="icon-box">
-            💬
-            <span class="badge">3</span>
-        </div>
-
-        <div class="profile">
-            <img src="https://via.placeholder.com/40" alt="">
-            <span>Admin</span>
-        </div>
-
     </div>
-
 </header>

@@ -10,7 +10,7 @@ Route::view('/login', 'auth.login')->name('login');
 Route::view('/dashboard', 'admin.layouts.index')->name('dashboard');
 Route::view('/slider', 'admin.slider.add')->name('slider');
 
-Route::view('/update/{id}', 'admin.slider.update');
+
 
  Route::get('/', [SliderController::class, 'list'])->name('slider.index');
 
