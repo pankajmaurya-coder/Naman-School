@@ -27,6 +27,10 @@ class User extends Authenticatable
         'bio'
     ];
 
+    public function teacher(){
+    return $this->hasOne(Teacher::class);
+}
+
     /**
      * The attributes that should be hidden for serialization.
      *
