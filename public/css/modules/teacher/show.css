@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.teacher-card{
+  width: 100%;
+    width:650px;
+    margin:40px auto;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.teacher-card:hover{
+    transform:translateY(-5px);
+}
+
+.teacher-image{
+    width:100%;
+    height:320px;
+    overflow:hidden;
+}
+
+.teacher-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.teacher-info{
+    padding:25px;
+}
+
+.teacher-info h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#222;
+    font-size:28px;
+}
+
+.info-row{
+    margin-bottom:15px;
+}
+
+.info-row span{
+    display:block;
+    font-weight:600;
+    color:#555;
+    margin-bottom:4px;
+}
+
+.info-row p{
+    color:#333;
+    font-size:16px;
+}
+
+.teacher-actions{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    padding:20px;
+    border-top:1px solid #eee;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-back{
+    background:#6c757d;
+    color:white;
+}
+
+.btn-update{
+    background:#0d6efd;
+    color:white;
+}
+
+.btn:hover{
+    opacity:0.9;
+}

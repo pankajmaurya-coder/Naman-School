@@ -1,32 +1,133 @@
-body{
-    background:#f4f6f9;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.card{
-    border-radius:15px;
+.teacher-page{
+    padding:30px;
+}
+
+.teacher-card{
+    background:#ffffff;
+    border-radius:16px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .card-header{
-    border-radius:15px 15px 0 0 !important;
+    margin-bottom:30px;
+    border-bottom:1px solid #e5e7eb;
+    padding-bottom:20px;
 }
 
-.form-control,
-.form-select{
-    height:50px;
-    border-radius:10px;
+.card-header h2{
+    font-size:30px;
+    color:#111827;
+    margin-bottom:8px;
 }
 
-textarea.form-control{
-    height:auto;
+.card-header p{
+    color:#6b7280;
+    font-size:15px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    font-size:14px;
+    font-weight:600;
+    color:#374151;
+    margin-bottom:8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:12px 14px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+    transition:0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,0.1);
+}
+
+.form-group textarea{
+    min-height:140px;
+    resize:vertical;
+}
+
+.full-width{
+    grid-column:1 / -1;
+}
+
+.form-actions{
+    margin-top:30px;
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
 }
 
 .btn{
-    border-radius:10px;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
     font-weight:600;
+    transition:0.3s;
 }
 
-.form-control:focus,
-.form-select:focus{
-    box-shadow:none;
-    border-color:#0d6efd;
+.btn-reset{
+    background:#6b7280;
+    color:#fff;
+}
+
+.btn-save{
+    background:#2563eb;
+    color:#fff;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+
+    .teacher-page{
+        padding:15px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .full-width{
+        grid-column:auto;
+    }
+
+    .form-actions{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+    }
 }

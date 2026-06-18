@@ -4,3 +4,4 @@ use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\RoleController;
 
 Route::resource('teacher', TeacherController::class);
+Route::resource('student', TeacherController::class);
