@@ -176,33 +176,5 @@
 </header>
 </body>
 
-<script>
-
-const menuBtn = document.querySelector(".menu-btn");
-const sidebar = document.querySelector(".sidebar");
-const closeBtn = document.querySelector(".close-btn");
-const overlay = document.querySelector(".overlay");
-
-menuBtn.addEventListener("click", function(){
-
-    sidebar.classList.add("active");
-    overlay.classList.add("active");
-
-});
-
-closeBtn.addEventListener("click", function(){
-
-    sidebar.classList.remove("active");
-    overlay.classList.remove("active");
-
-});
-
-overlay.addEventListener("click", function(){
-
-    sidebar.classList.remove("active");
-    overlay.classList.remove("active");
-
-});
-
 </script>
 </html>

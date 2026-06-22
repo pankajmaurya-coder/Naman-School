@@ -12,17 +12,13 @@
     <link rel="stylesheet" href="{{ asset('css/admin/layouts/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/admin/layouts/sidebar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/admin/layouts/layout.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/admin/layouts/index.css') }}">
 
     @stack('styles')
 </head>
 <body>
 
-
- 
-
     <div class="admin-layout">
-
-         
 
         @include('admin.layouts.header')
 

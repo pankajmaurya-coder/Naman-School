@@ -1,5 +1,4 @@
 <section class="hero-slider">
-
     @foreach($sliders as $slider)
         <div class="slide {{ $loop->first ? 'active' : '' }}">
 

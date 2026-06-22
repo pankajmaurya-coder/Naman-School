@@ -1,17 +1,21 @@
-const slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll(".slide");
 
 let currentSlide = 0;
 
 setInterval(() => {
+    const currentImg = slides[currentSlide].querySelector("img");
 
-    slides[currentSlide].classList.remove('active');
+    slides[currentSlide].classList.remove("active");
+    currentImg.style.animation = "none";
 
-    currentSlide++;
+    currentSlide = (currentSlide + 1) % slides.length;
 
-    if(currentSlide >= slides.length){
-        currentSlide = 0;
-    }
+    const nextImg = slides[currentSlide].querySelector("img");
 
-    slides[currentSlide].classList.add('active');
+    nextImg.style.animation = "none";
+    nextImg.offsetHeight; // reflow
 
-}, 2000);
+    nextImg.style.animation = "zoomEffect 4s ease-out forwards";
+
+    slides[currentSlide].classList.add("active");
+}, 3000);

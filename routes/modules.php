@@ -8,3 +8,5 @@ Route::resource('student', TeacherController::class);
 
 
 Route::view('/info','web.layouts.info');
+
+Route::view('/comp', 'web.components.achivment');
